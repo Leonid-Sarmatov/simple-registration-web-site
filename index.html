@@ -54,10 +54,12 @@
     function registerUser() {
       var login = document.getElementById("login").value;
       var password = document.getElementById("password").value;
+      var favoriteGame = document.getElementById("favorite-game").value;
 
       var userData = {
         login: login,
-        password: password
+        password: password,
+        favoriteGame: favoriteGame
       };
 
       var xhr = new XMLHttpRequest();
